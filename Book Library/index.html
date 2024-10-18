@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table class="container">
+        <thead>
+            <tr>
+                <th><h1>Title</h1></th>
+                <th><h1>Author</h1></th>
+                <th><h1>Pages</h1></th>
+                <th><h1>Status</h1></th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+
+    <dialog id="dialog" class="dialog">
+        <form method="dialog">
+            <p>
+                <label>
+                    Book Name:
+                    <input id="addBookName" class="input-field" type="text" required />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Author Name:
+                    <input id="authorName" class="input-field" type="text" required />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Number of Pages:
+                    <input id="bookPages" class="input-field" type="text" required />
+                </label>
+            </p>
+            <div>
+                <input class = "submitButton" type="submit" id="submitBook" value="Submit" />
+                <button type="button" class="close">Close</button>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog id="deleteDialog">
+        <form method="dialog">
+            <p>
+                <label>
+                    Book Name:
+                    <input id="deleteBookName" class="input-field" type="text" required />
+                </label>
+            </p>
+            <div>
+                <button type="button" id="deleteBook" class="delete-button">Delete</button>
+                <button type="button" id="closeDeleteDialog" class="close-button">Close</button>
+            </div>
+        </form>
+    </dialog>
+
+    <div class="button-container">
+        <button class="add-button" id="addBookBtn">+ Add</button>
+        <button class="add-button" id="deleteBookBtn">Delete</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
